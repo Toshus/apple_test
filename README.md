@@ -4,13 +4,16 @@
 #####Установка
 
 ```
-git clone https://github.com/Toshus/apple_test.git
+создать каталог проекта, перейти в него и выполнить команду
+
+git clone https://github.com/Toshus/apple_test.git .
 
 composer install
 
-в файле environments/prod/common/main-local.php прописать настройки БД
+создать базу данных
+в файле environments/prod/common/main-local.php прописать настройки подключения к БД
 
-php init --env=Production --overwrite=All
+init --env=Production --overwrite=All
 
 yii migrate
 ```
